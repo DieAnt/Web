@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+    <head>
+        <script>
+            function envia(){
+                console.log(document.getElementsById('a').value);
+                var r = document.getElementsByClassName('a');
+                for (let i = 0; i < r.length; i++) {
+                    if (r[i].checked) {
+                        console.log("Escolha: " + r[i].value);
+                    } 
+                }
+
+                console.log(document.getElementById('b').checked);
+                console.log(document.getElementById('c').checked);                
+            }
+        </script>
+    </head>
+    <body>
+
+        <br>
+        
+        <select name = "a" id = "a">
+            <option value = "1"> carro </option>
+            <br>
+            <option value = "2"> moto </option>
+        </select>
+
+        <br>
+
+        <br>
+
+        <input type="checkbox" name = "b" id = "1">
+        <label> html</label><br>
+        <input type="checkbox" name = "b" id = "2">
+        <label> css</label><br>
+        <input type="checkbox" name = "b" id = "3">
+        <label> javascript</label><br>
+        </input>
+
+        <br>
+        
+        <input type = "radio" name = "c" id = "1">
+        <label> sim</label><br>
+        <input type = "radio" name = "c" id = "2">
+        <label> não</label><br>
+        <input type = "radio" name = "c" id = "3">
+        <label> talvez</label><br>
+        </input>
+
+        <br>
+
+        <button onclick = "envia()"> Enviar </button>
+    </body>
+</html>
